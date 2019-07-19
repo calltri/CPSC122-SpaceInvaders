@@ -1,11 +1,29 @@
+/*******************************************************************************
+ * Programmer: Tristan Call, Dominic Davok, Chandler Teigen                                                    *
+ * Class: CptS 122; Lab Section 1                                              *
+ * Programming Assignment: PA8                                                 *
+ * Date: 7-19-19                                                               *
+ *                                                                             *
+ * Description: space invaders
+ *                                                                             *
+ * Relevant Formulas: Refer to each function definition.                       *
+ *                                                                             *
+ * Format of record in input file:none
+                                            *
+ * Format of output file:none
+ ******************************************************************************/
+
+
 #include"SFML/Graphics.hpp"
+#include"Lasers.h"
+#include"Global_Constants.h"
+
 
 int main()
 {
-	sf::RenderWindow gameWindow(sf::VideoMode(640, 800), "CPTS 122 Lab", sf::Style::Titlebar | sf::Style::Close);
+	sf::RenderWindow gameWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "CPTS 122 Lab", sf::Style::Titlebar | sf::Style::Close);
 
 	gameWindow.setVerticalSyncEnabled(true); //matches frame rate of this to computer
-
 
 	while (gameWindow.isOpen())
 	{
@@ -18,6 +36,7 @@ int main()
 		}
 
 		gameWindow.clear();
+		gameWindow.draw(l1);
 		gameWindow.display();
 	}
 }
