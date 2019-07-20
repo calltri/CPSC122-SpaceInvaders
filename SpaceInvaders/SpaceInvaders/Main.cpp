@@ -1,27 +1,30 @@
 /*******************************************************************************
- * Programmer: Tristan Call, Dominic Davok, Chandler Teigen                                                    *
+ * Programmer: Tristan Call, Dominic Davok, Chandler Teigen                    *
  * Class: CptS 122; Lab Section 1                                              *
  * Programming Assignment: PA8                                                 *
  * Date: 7-19-19                                                               *
  *                                                                             *
- * Description: space invaders
+ * Description: space invaders												   *
  *                                                                             *
  * Relevant Formulas: Refer to each function definition.                       *
  *                                                                             *
- * Format of record in input file:none
-                                            *
- * Format of output file:none
+ * Format of record in input file:none										   *	
+ *																			   *
+ * Format of output file:none												   *
  ******************************************************************************/
 
 
 #include"SFML/Graphics.hpp"
 #include"Lasers.h"
 #include"Global_Constants.h"
+#include "Ships.h"
+#include "BasicEnemy.h"
 
 
 int main()
 {
-	
+	 BasicEnemy e1; //test ship with test texture
+	e1.setPosition(*(new sf::Vector2f(100, 100)));
 	Lasers l1(*(new sf::Vector2f(30,30))); //test laser
 	sf::RenderWindow gameWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "CPTS 122 Lab", sf::Style::Titlebar | sf::Style::Close);
 
@@ -38,6 +41,7 @@ int main()
 		}
 
 		gameWindow.clear();
+		gameWindow.draw(e1);
 		gameWindow.draw(l1);
 		gameWindow.display();
 	}

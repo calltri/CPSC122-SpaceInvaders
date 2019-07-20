@@ -145,11 +145,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicEnemy.cpp" />
     <ClCompile Include="Lasers.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Ships.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicEnemy.h" />
     <ClInclude Include="Global_Constants.h" />
     <ClInclude Include="Lasers.h" />
     <ClInclude Include="Ships.h" />
