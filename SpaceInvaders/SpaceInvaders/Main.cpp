@@ -21,6 +21,8 @@
 
 int main()
 {
+	
+	Lasers l1(*(new sf::Vector2f(30,30))); //test laser
 	sf::RenderWindow gameWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "CPTS 122 Lab", sf::Style::Titlebar | sf::Style::Close);
 
 	gameWindow.setVerticalSyncEnabled(true); //matches frame rate of this to computer
