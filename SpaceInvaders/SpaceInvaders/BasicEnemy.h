@@ -11,10 +11,21 @@ public:
 	//destructor
 	~BasicEnemy();
 
-
+	/****************************************************************
+* Function: spawnLaser()                                     *
+* Date Created: 7-21-19											*
+* Date Last Modified: 7-21-19									*
+* Description:spawns lasers for single ship in right position
+* Input Parameters: none
+* Returns: vector<Lasers*> - vector to all lasers the ship spawned													*
+* Preconditions:  none											*
+* Postconditions:	none										*
+*****************************************************************/
+	vector<Lasers*> laserSpawn() const;
 
 
 private:
 
 
 };
+

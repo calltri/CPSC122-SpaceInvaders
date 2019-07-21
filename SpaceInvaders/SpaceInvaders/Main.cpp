@@ -16,16 +16,33 @@
 
 #include"SFML/Graphics.hpp"
 #include"Lasers.h"
+#include"GoodLaser.h"
 #include"Global_Constants.h"
 #include "Ships.h"
 #include "BasicEnemy.h"
+#include <vector>
+#include"TestAllLasers.h"
+#include<ctime>
+#include<cstdlib>
 
+using std::vector;
 
 int main()
 {
-	 BasicEnemy e1; //test ship with test texture
+	TestAllLasers test1;
+	srand(time(0));
+
+	//test1.TestSpawnAllLasers();
+	//test1.TestMoveAllLasers();
+	/*
+	BasicEnemy e1; //test ship with test texture
 	e1.setPosition(*(new sf::Vector2f(100, 100)));
-	Lasers l1(*(new sf::Vector2f(30,30))); //test laser
+	
+	vector<Lasers*> currentLasers;
+	currentLasers.push_back(new Lasers(*(new sf::Vector2f(600, 400))));
+	currentLasers.push_back(new GoodLaser(*(new sf::Vector2f(10, 600))));
+	static_cast<GoodLaser*>(currentLasers.at(0));
+
 	sf::RenderWindow gameWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "CPTS 122 Lab", sf::Style::Titlebar | sf::Style::Close);
 
 	gameWindow.setVerticalSyncEnabled(true); //matches frame rate of this to computer
@@ -41,8 +58,15 @@ int main()
 		}
 
 		gameWindow.clear();
+
+
+		for (int i = 0; i < currentLasers.size(); i++)
+		{
+			static_cast<GoodLaser*>(currentLasers.at(i))->moveLaser();
+			gameWindow.draw(*currentLasers.at(i));
+		}
 		gameWindow.draw(e1);
-		gameWindow.draw(l1);
 		gameWindow.display();
 	}
+	*/
 }

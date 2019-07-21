@@ -100,13 +100,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>SFML_DYNAMIC;_DEBUG;_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\domin\Documents\CptS 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\tristan\source\repos\CPSC 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>sfml-system-d.lib;freetype.lib;sfml-graphics-d.lib;sfml-window-d.lib;opengl32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\domin\Documents\CptS 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\tristan\source\repos\CPSC 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -133,7 +133,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>SFML_DYNAMIC;_DEBUG;_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\domin\Documents\CptS 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\tristan\source\repos\CPSC 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -141,20 +141,26 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>sfml-system-d.lib;freetype.lib;sfml-graphics-d.lib;sfml-window-d.lib;opengl32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\domin\Documents\CptS 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\tristan\source\repos\CPSC 122\CPSC122-SpaceInvaders\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AllLasers.cpp" />
     <ClCompile Include="BasicEnemy.cpp" />
+    <ClCompile Include="GoodLaser.cpp" />
     <ClCompile Include="Lasers.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Ships.cpp" />
+    <ClCompile Include="TestAllLasers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllLasers.h" />
     <ClInclude Include="BasicEnemy.h" />
     <ClInclude Include="Global_Constants.h" />
+    <ClInclude Include="GoodLaser.h" />
     <ClInclude Include="Lasers.h" />
     <ClInclude Include="Ships.h" />
+    <ClInclude Include="TestAllLasers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

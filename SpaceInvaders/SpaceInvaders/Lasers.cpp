@@ -11,12 +11,7 @@ Lasers::~Lasers()
 {
 }
 
-void Lasers::moveUpwards(const float & speed)
-{
-	move(0.0, -speed);
-}
-
-void Lasers::moveDownwards(const float & speed)
+void Lasers::moveLaser(const float & speed)
 {
 	move(0.0, speed);
 }
