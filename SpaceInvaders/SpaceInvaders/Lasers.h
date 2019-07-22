@@ -14,29 +14,27 @@ public:
 	Lasers(sf::Vector2f &newPosition);
 	~Lasers();
 
-	/*************************************************************
-* Function: moveUpwards()                                      *
-* Date Created: 7-19-19                                     *
-* Date Last Modified: 7-19-19                             *
-* Description:moves the laser upwards. What good guy lasers do
-*
-* Input parameters: float speed (auto set to LASER_SPEED)                   *
-* Returns: none                               *
-* Preconditions:  none                                      *
-* Postconditions:	none                                    *
-*************************************************************/
+/****************************************************************
+* Function: moveUpwards()										*
+* Date Created: 7-19-19											*
+* Date Last Modified: 7-19-19									*
+* Description:moves the laser upwards. What good guy lasers do  *
+* Input parameters: float speed (auto set to LASER_SPEED)		*
+* Returns: none													*
+* Preconditions:  none											*
+* Postconditions:	none										*
+*****************************************************************/
 	void moveUpwards(const float &speed = LASER_SPEED);
-	/*************************************************************
-* Function: moveDownwards()                                      *
-* Date Created: 7-19-19                                     *
-* Date Last Modified: 7-19-19                             *
-* Description:moves the laser downwards. for enemy lasers
-*
-* Input parameters: float speed (auto set to LASER_SPEED)                   *
-* Returns: none                               *
-* Preconditions:  none                                      *
-* Postconditions:	none                                    *
-*************************************************************/
+/****************************************************************
+* Function: moveDownwards()                                     *
+* Date Created: 7-19-19											*
+* Date Last Modified: 7-19-19									*
+* Description:moves the laser downwards. for enemy lasers		*
+* Input parameters: float speed (auto set to LASER_SPEED)       *
+* Returns: none													*
+* Preconditions:  none											*
+* Postconditions:	none										*
+*****************************************************************/
 	void moveDownwards(const float &speed = LASER_SPEED);
 
 private:
