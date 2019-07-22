@@ -1,2 +1,3 @@
 ﻿  Ships.cpp
-  SpaceInvaders.vcxproj -> D:\domin\Documents\CptS 122\CPSC122-SpaceInvaders\SpaceInvaders\x64\Debug\SpaceInvaders.exe
+c:\users\tristan\source\repos\cpsc 122\cpsc122-spaceinvaders\spaceinvaders\spaceinvaders\ships.cpp(19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  SpaceInvaders.vcxproj -> C:\Users\tristan\source\repos\CPSC 122\CPSC122-SpaceInvaders\SpaceInvaders\x64\Debug\SpaceInvaders.exe

@@ -12,19 +12,8 @@ public:
 	inputs: vector2f of new position
 	autos: automatically sets laser to laser Size (see global constants) and blue color*/
 	Lasers(sf::Vector2f &newPosition);
-	~Lasers();
+	virtual ~Lasers();
 
-/****************************************************************
-* Function: moveUpwards()										*
-* Date Created: 7-19-19											*
-* Date Last Modified: 7-19-19									*
-* Description:moves the laser upwards. What good guy lasers do  *
-* Input parameters: float speed (auto set to LASER_SPEED)		*
-* Returns: none													*
-* Preconditions:  none											*
-* Postconditions:	none										*
-*****************************************************************/
-	void moveUpwards(const float &speed = LASER_SPEED);
 /****************************************************************
 * Function: moveDownwards()                                     *
 * Date Created: 7-19-19											*
@@ -35,7 +24,7 @@ public:
 * Preconditions:  none											*
 * Postconditions:	none										*
 *****************************************************************/
-	void moveDownwards(const float &speed = LASER_SPEED);
+	virtual void moveLaser(const float &speed = LASER_SPEED);
 
 private:
 
