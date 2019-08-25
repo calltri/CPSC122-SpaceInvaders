@@ -23,6 +23,8 @@ public:
 *****************************************************************/
 	vector<Lasers*> laserSpawn() const;
 
+	void movement();
+
 
 private:
 

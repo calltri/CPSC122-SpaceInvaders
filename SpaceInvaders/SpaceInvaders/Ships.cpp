@@ -6,7 +6,6 @@ Ships::Ships(string textureFile, float width, float length)
 {
 	spriteTexture.loadFromFile(textureFile);
 	this->setTexture(spriteTexture);
-	//FIXME get rid of this comment this->setTextureRect(sf::IntRect(0, 0, width, length));
 }
 
 Ships::~Ships()
@@ -28,5 +27,28 @@ sf::Vector2f Ships::generateRandomSpawnPosition(float width)
 
 void Ships::movement()
 {
+}
+
+void Ships::setHealth(const int & health)
+{
+	if (health >= 0)
+		mHealth = health;
+	else
+		mHealth = 0;
+}
+
+int Ships::getHealth() const
+{
+	return mHealth;
+}
+
+void Ships::decrementHealth(const int & decrement)
+{
+	mHealth -= decrement;
+}
+
+int Ships::getPoints() const
+{
+	return points;
 }
 

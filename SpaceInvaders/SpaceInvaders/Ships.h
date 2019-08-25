@@ -9,8 +9,6 @@
 using std::vector;
 using std::string;
 
-const bool DEBUG = false;
-
 class Ships : public sf::Sprite
 {
 public:
@@ -32,16 +30,34 @@ will still be inbounds of everything
 * Postconditions:	none										*
 *****************************************************************/
 	sf::Vector2f generateRandomSpawnPosition(float width);
-
+/****************************************************************
+* Function: Ships::movement()								    *
+* Date Created: 7-22-19											*
+* Date Last Modified: 7-22-19									*
+* Description: Virtual function, to be overridden by	        *
+*			   derived class movement functions.				*
+* Input parameters: NA											*
+* Returns: NA													*
+* Preconditions:  none											*
+* Postconditions:	none										*
+*****************************************************************/
 	virtual void movement();
 
 
 	virtual vector<Lasers*> laserSpawn() const = 0;
 
+	//health functions
+	//getters/setters
+	void setHealth(const int& health);
+	int getHealth() const;
+	void decrementHealth(const int& decrement = 1);
+	//getter
+	int getPoints() const;
 
 protected:
 	sf::Texture spriteTexture;
 	int mHealth;
+	int points;
 
 
 };

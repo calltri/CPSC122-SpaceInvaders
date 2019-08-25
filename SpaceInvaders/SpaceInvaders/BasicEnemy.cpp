@@ -4,7 +4,8 @@ BasicEnemy::BasicEnemy(string textureFile, float width, float length, sf::Vector
 	: Ships(textureFile, width, length)
 {
 	this->setPosition(generateRandomSpawnPosition(width));
-	
+	this->points = 10;
+	this->mHealth = 1;
 }
 
 BasicEnemy::~BasicEnemy()
@@ -21,4 +22,9 @@ vector<Lasers*> BasicEnemy::laserSpawn() const
 	allLasers.push_back(new Lasers(*new sf::Vector2f(newX, newY)));
 
 	return allLasers;
+}
+
+void BasicEnemy::movement()
+{
+	move(0, 3);
 }

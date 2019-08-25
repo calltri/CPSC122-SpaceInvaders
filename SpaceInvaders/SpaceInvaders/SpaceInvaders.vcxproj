@@ -145,22 +145,56 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AllEnemyShips.cpp" />
     <ClCompile Include="AllLasers.cpp" />
     <ClCompile Include="BasicEnemy.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Enemy2.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
+    <ClCompile Include="FriendlyShip.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GoodLaser.cpp" />
+    <ClCompile Include="HealthDisplay.cpp" />
     <ClCompile Include="Lasers.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Ships.cpp" />
+    <ClCompile Include="TestAllEnemyShips.cpp" />
     <ClCompile Include="TestAllLasers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllEnemyShips.h" />
     <ClInclude Include="AllLasers.h" />
     <ClInclude Include="BasicEnemy.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Enemy2.h" />
+    <ClInclude Include="EnemyBoss.h" />
+    <ClInclude Include="FriendlyShip.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Global_Constants.h" />
     <ClInclude Include="GoodLaser.h" />
+    <ClInclude Include="HealthDisplay.h" />
     <ClInclude Include="Lasers.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Ships.h" />
+    <ClInclude Include="TestAllEnemyShips.h" />
     <ClInclude Include="TestAllLasers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="ComicSansMS3.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="enemyBasicSprite.png" />
+    <Image Include="enemyShipSprite.png" />
+    <Image Include="enemySprite2.png" />
+    <Image Include="friendlyShipSprite.png" />
+    <Image Include="heartSprite.png" />
+    <Image Include="InfoBG.png" />
+    <Image Include="MenuBG.png" />
+    <Image Include="testTexture.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

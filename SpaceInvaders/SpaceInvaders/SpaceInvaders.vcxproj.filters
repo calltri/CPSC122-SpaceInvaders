@@ -36,6 +36,33 @@
     <ClCompile Include="TestAllLasers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AllEnemyShips.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBoss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendlyShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAllEnemyShips.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lasers.h">
@@ -59,5 +86,68 @@
     <ClInclude Include="TestAllLasers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendlyShip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBoss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AllEnemyShips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAllEnemyShips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="ComicSansMS3.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="enemyBasicSprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="enemyShipSprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="enemySprite2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="friendlyShipSprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="heartSprite.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InfoBG.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="MenuBG.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="testTexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
